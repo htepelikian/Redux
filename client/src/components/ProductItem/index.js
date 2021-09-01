@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { pluralize } from "../../utils/helpers"
-import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
+import { pluralize } from "../../utils/helpers";
+import { ADD_TO_CART, UPDATE_CART_QUANTITY} from '../../utils/actions';
 import { idbPromise } from "../../utils/helpers";
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -36,6 +36,8 @@ function ProductItem(item) {
     }
   }
 
+
+
   const {
     image,
     name,
@@ -43,6 +45,9 @@ function ProductItem(item) {
     price,
     quantity
   } = item;
+
+
+
 
   return (
     <div className="card px-1 py-1">
