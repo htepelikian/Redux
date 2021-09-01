@@ -8,11 +8,17 @@ import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
 
 function ProductList() {
-  const [state, dispatch] = useStoreContext();
+
+  const state = useSelector((state) => {
+    return state
+  });
+  const dispatch = useDispatch();
 
   const { currentCategory } = state;
-
+  
   const { loading, data } = useQuery(QUERY_PRODUCTS);
+
+  const products = data?.products || [];
 
   useEffect(() => {
     if (data) {
