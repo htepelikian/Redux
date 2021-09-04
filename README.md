@@ -19,7 +19,13 @@ THEN I find that the app uses Redux instead of the Context API
 WHEN I review the way the app dispatches actions
 THEN I find that the app uses Redux instead of the Context API
 
+![ezgif-3-8cb26a0aa0fd](https://user-images.githubusercontent.com/85534144/132105040-b6fd069e-4dc7-483c-8281-eb1efa630361.gif)
+
+
+https://tranquil-lowlands-77117.herokuapp.com
+
 
 **Resources**
 
 https://create-react-app.dev/docs/getting-started/
+
